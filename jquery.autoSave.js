@@ -16,7 +16,7 @@
                     localStorage.setItem("autoSave", $context);
                 }
                 timer = setTimeout(function() {
-                    callback();
+                    callback.call($this);
                 }, delay);
             });
         });
